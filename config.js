@@ -10,12 +10,12 @@ config = {
     // When running Ghost in the wild, use the production environment
     // Configure your URL and mail settings here
     production: {
-        url: 'http://javacoder.xyz',
+        url: 'http://localhost:1291',
         mail: {},
         database: {
             client: 'sqlite3',
             connection: {
-                filename: path.join(__dirname, '/content/data/ghost.db')
+                filename: path.join(__dirname, '/content/data/blog_xyz.db')
             },
             debug: false
         },
@@ -24,7 +24,7 @@ config = {
             // Host to be passed to node's `net.Server#listen()`
             host: '127.0.0.1',
             // Port to be passed to node's `net.Server#listen()`, for iisnode set this to `process.env.PORT`
-            port: '2391'
+            port: '2368'
         },
 
         // 图片存储引擎配置
@@ -57,7 +57,7 @@ config = {
     development: {
         // The url to use when providing links to the site, E.g. in RSS and email.
         // Change this to your Ghost blogs published URL.
-        url: 'http://localhost:2368',
+        url: 'http://localhost:1291',
 
         // Example mail config
         // Visit http://support.ghost.org/mail for instructions
