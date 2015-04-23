@@ -71,7 +71,8 @@ apiRoutes = function (middleware) {
 
     //interface
     router.get('/atheme/list',function(req,res){
-        api.iface.list(req,res);
+      res.writeHead(200,{"Content-Type":"text/json:charset=utf-8"});
+        res.end("asf1");    
     })
 
     // ## Authentication
