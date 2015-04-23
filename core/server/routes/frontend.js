@@ -8,7 +8,7 @@ var frontend    = require('../controllers/frontend'),
 frontendRoutes = function () {
     var router = express.Router(),
         subdir = config.paths.subdir;
-
+   
     // ### Admin routes
     router.get(/^\/(logout|signout)\/$/, function redirect(req, res) {
         /*jslint unparam:true*/
@@ -35,7 +35,7 @@ frontendRoutes = function () {
         res.set({'Cache-Control': 'public, max-age=' + utils.ONE_YEAR_S});
         res.redirect(301, subdir + '/rss/');
     });
-
+    
     // Tags
     router.get('/' + config.routeKeywords.tag + '/:slug/rss/', frontend.rss);
     router.get('/' + config.routeKeywords.tag + '/:slug/rss/:page/', frontend.rss);

@@ -70,7 +70,7 @@ apiRoutes = function (middleware) {
     });
 
     //interface
-    router.post('/atheme/list',function(req,res){
+    router.get('/atheme/list',function(req,res){
         api.iface.list(req,res);
     })
 
