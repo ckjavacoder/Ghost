@@ -10,7 +10,7 @@ iface = {
 	}
 }
 
-list:function(req,res){
+list=function(req,res){
 		res.writeHead(200,{"Content-Type":"text/json:charset=utf-8"});
 		res.end("asf1");	
 	}
