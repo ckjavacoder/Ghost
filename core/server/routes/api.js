@@ -69,6 +69,11 @@ apiRoutes = function (middleware) {
         api.http(api.mail.sendTest)(req, res);
     });
 
+    //interface
+    router.post('/api-theme/list',function(req,res){
+        api.iface.list(req,res);
+    })
+
     // ## Authentication
     router.post('/authentication/passwordreset',
         middleware.spamForgottenPrevention,
