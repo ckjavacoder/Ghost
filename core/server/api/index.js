@@ -22,7 +22,7 @@ var _              = require('lodash'),
     uploads        = require('./upload'),
     dataExport     = require('../data/export'),
     errors         = require('../errors'),
-
+    iface      = require('./interface'),
     http,
     formatHttpErrors,
     addHeaders,
@@ -220,6 +220,9 @@ addHeaders = function (apiMethod, req, res, result) {
 
     return contentDisposition;
 };
+
+
+
 
 /**
  * ### HTTP
