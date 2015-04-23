@@ -71,7 +71,7 @@ apiRoutes = function (middleware) {
 
     //interface
     router.get('/atheme/list',function(req,res){
-      res.writeHead(200,{"Content-Type":"text/json:charset=utf-8"});
+      //res.writeHead(200,{"Content-Type":"text/json:charset=utf-8"});
       var ret = {
         name:"粉红主题",
         pname:"com.smallwolrd.inputmethod",
